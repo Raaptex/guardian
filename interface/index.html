@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet"/>
+    <title>Guardian - Stealer Blocker</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="logo-buttons-wrapper">
+                <div class="logo-wrapper">
+                    <button onclick="moveTo('home')" class="logo"></button>
+                </div>
+                <div class="buttons-wrapper">
+                    <button onclick="moveTo('active')" class="protect"></button>
+                    <button onclick="moveTo('verif')" class="verif"></button>
+                    <button onclick="moveTo('stats')" class="stats"></button>
+                    <button onclick="moveTo('settings')" class="settings"></button>
+                </div>
+            </div>
+            <div class="version-wrapper">
+                <span id="version"></span>
+            </div>
+        </nav>
+        <div id="loader-wrapper">
+            <div class="loader"></div>
+        </div>
+        <div class="hide" id="main-content">
+        </div>
+    </main>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

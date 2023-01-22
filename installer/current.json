@@ -1,0 +1,23 @@
+{
+    "protection_status": false,
+    "agent_pid": 0,
+    "agent_loaded": false,
+    "settings": {
+        "on_startup": false,
+        "notifications": true,
+        "process-scan-active": true,
+        "process-ask-before": true,
+        "process-scan-only-folder-filter": true,
+        "process-scan-filter-folders": []
+    },
+    "trusted_exe": [],
+    "hash_to_uuid": {},
+    "secure_info": {},
+    "stats": {
+        "securized_data": 0,
+        "token_grabber_detection": 0,
+        "ip_grabber_detection": 0,
+        "stealer_detection": 0,
+        "process_scanned": 0
+    }
+}

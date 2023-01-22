@@ -1,0 +1,54 @@
+<div class="content-box">
+    <span class="content-title">Settings</span>
+    <div class="settings">
+        <div class="title-wrapper">
+            <span class="title">General</span>
+        </div>
+        <div class="setting">
+            <span class="setting-title">On startup</span>
+            <label class="input switch">
+                <input id="on_startup" onclick="settingUpdate('on_startup', this.checked)" type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="setting">
+            <span class="setting-title">Notifications</span>
+            <label class="input switch">
+                <input id="notifications" onclick="settingUpdate('notifications', this.checked)" type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="title-wrapper">
+            <span class="title">Process Scanning</span>
+        </div>
+        <div class="setting">
+            <span class="setting-title">Active</span>
+            <label class="input switch">
+                <input id="process-scan-active" onclick="settingUpdate('process-scan-active', this.checked)" type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="setting">
+            <span class="setting-title">Ask before scanning</span>
+            <label class="input switch">
+                <input id="process-ask-before" onclick="settingUpdate('process-ask-before', this.checked)" type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="setting">
+            <span class="setting-title">Only folder filter</span>
+            <label class="input switch">
+                <input id="process-scan-only-folder-filter" onclick="settingUpdate('process-scan-only-folder-filter', this.checked)" type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="setting">
+            <span class="setting-title">Filter folders</span>
+            <button class="input setting-button" onclick="updateFilterFolders()">Select</button>
+        </div>
+        <ul id="process-scan-filter-folders">
+
+        </ul>
+    </div>
+</div>
+<img class="hide" src="a" onerror="settingsLoaded()"></img>
